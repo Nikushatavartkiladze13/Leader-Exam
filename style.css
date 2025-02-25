@@ -1,0 +1,90 @@
+body{
+    height:100vh;
+    overflow: hidden;
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+}
+main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:10px;
+    background:none;
+    box-shadow:0px 0px 10px #0f0;
+    border-radius:10px
+}
+.row_for_operation, .row{
+    display:flex;
+    margin-top:2%;
+    display:flex;
+    justify-content: space-between;
+    width:85%;
+    margin-left:8%
+}
+button{
+    min-width:70px;
+    min-height:70px;
+    font-size:20px;
+    cursor:pointer;
+    border-radius:5px;
+    border-style:groove;
+    border-width:2px;
+    background: none;
+    color:rgb(0, 255, 0);
+    border-color: #0f0;
+    text-shadow:0px 0px 5px #0f0;
+    transition:0.2s 
+}
+button:hover{
+    box-shadow:0px 0px 10px #0f0
+}
+button:active{
+    background-color: #0f0;
+    color:black
+}
+input{
+    margin:20px 0px;
+    height:70px;
+    width:79%;
+    font-size:30px;
+    border-radius:10px 10px 0px 0px;
+    margin-left:8%;
+    background: none;
+    color:#0f0;
+    border-style: groove;
+    border-color:#0f0;
+    padding-right:20px;
+    text-align: right;
+}
+#equal{
+    flex-grow: 1;
+    margin-bottom:20px;
+    font-weight: bold;
+    font-size:40px
+}
+.operation{
+    background-color: #0f0;
+    color:black;
+}
+select{
+    width:150px;
+    font-size: 20px;
+    height:50px;
+    background:none;
+    color:grey;
+    text-shadow: 0px 0px 4px #0f0;
+    border-style: groove;
+    cursor:pointer;
+    text-align: center;
+    transition:0.5s
+}
+select:hover{
+    background-color: rgb(17, 17, 17);
+    border-radius:20px
+}
