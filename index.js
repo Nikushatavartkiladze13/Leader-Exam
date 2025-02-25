@@ -6,7 +6,7 @@ function backgroundModerl(){
     }
 }
 
-let display = document.getElementById('result')
+let display = document.getElementById('input_2')
 
 function element(Element){
     display.value = display.value + Element
